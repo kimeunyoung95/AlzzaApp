@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="80dp"
+        android:paddingRight="80dp"
+        android:paddingTop="60dp"
+        android:layout_gravity="center">
+
+        <!--자신의 역량에맞게 이미지 변환-->
+
+        <TextView
+            android:id="@+id/mypage_charactername"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="허니비"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:background="#99433D3B"
+            android:layout_gravity="center"
+            android:layout_marginBottom="18dp"/>
+
+        <ImageView
+            android:id="@+id/mypage_image"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/character_honeybee"
+            android:layout_gravity="center"/>
+
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/mypage_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="4dp"
+                android:gravity="center"
+                android:text="닉네임"
+                android:textSize="18dp"
+                android:layout_gravity="center_horizontal" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1.5dp"
+                android:background="#50000000"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/mypage_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:layout_marginTop="24dp"
+                android:hint="다음 강의는"
+                android:textSize="16dp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/mypage_password2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:layout_marginTop="4dp"
+                android:hint="신공학관 6144호 입니다."
+                android:textSize="16dp"
+                android:layout_marginBottom="4dp"
+                android:layout_gravity="center_horizontal" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.5dp"
+                android:background="#50000000"
+                android:layout_weight="5"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:paddingRight="20dp"
+        android:gravity="right">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/floating"
+            android:scaleType="centerCrop" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

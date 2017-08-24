@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bb_menu_recents"
+        android:icon="@drawable/b1"
+        android:title="메뉴" />
+    <item
+        android:id="@+id/bb_menu_favorites"
+        android:icon="@drawable/b2"
+        android:title="시간표" />
+    <item
+        android:id="@+id/bb_menu_nearby"
+        android:icon="@drawable/b3"
+        android:title="Board" />
+    <item
+        android:id="@+id/bb_menu_friends"
+        android:icon="@drawable/b4"
+        android:title="강의평가" />
+    <item
+        android:id="@+id/bb_menu_food"
+        android:icon="@drawable/b5"
+        android:title="추천" />
+</menu>

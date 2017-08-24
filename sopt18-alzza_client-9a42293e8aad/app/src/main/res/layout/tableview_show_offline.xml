@@ -1,0 +1,733 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normal_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:background="@drawable/table"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/week_monday_title"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/table"
+                android:gravity="center"
+                android:text="MON"
+                android:textColor="@color/black_333333"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/week_tuesday_title"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/table"
+                android:gravity="center"
+                android:text="TUE"
+                android:textColor="@color/black_333333"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/week_wednesday_title"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/table"
+                android:gravity="center"
+                android:text="WED"
+                android:textColor="@color/black_333333"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/week_thursday_title"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/table"
+                android:gravity="center"
+                android:text="THU"
+                android:textColor="@color/black_333333"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/week_friday_title"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/table"
+                android:gravity="center"
+                android:text="FRI"
+                android:textColor="@color/black_333333"
+                android:textSize="15sp" />
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/table"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/table"
+                    android:gravity="center"
+                    android:text="1교시"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/monday_1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/table"
+                    android:onClick="onButtonClick1"
+                    android:clickable="true"
+                    />
+
+                <TextView
+                    android:id="@+id/tuesday_1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/textview_table_normal"
+                    android:onClick="onButtonClick"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:id="@+id/wednesday_1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/textview_table_normal"
+                    android:onClick="onButtonClick"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:id="@+id/thursday_1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/textview_table_normal"
+                    android:onClick="onButtonClick"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:id="@+id/friday_1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/textview_table_normal"
+                    android:onClick="onButtonClick"
+                    android:clickable="true"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/table"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/textview_table_normal"
+                    android:gravity="center"
+                    android:onClick="onButtonClick"
+                    android:clickable="true"
+                    android:text="2교시"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+
+
+                <TextView
+                    android:id="@+id/monday_2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/table"
+                    android:onClick="onButtonClick"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:id="@+id/tuesday_2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/textview_table_normal"
+                    android:onClick="onButtonClick"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:id="@+id/wednesday_2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/textview_table_normal"
+                    android:onClick="onButtonClick"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:id="@+id/thursday_2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/textview_table_normal"
+                    android:onClick="onButtonClick"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:id="@+id/friday_2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/textview_table_normal"
+                    android:onClick="onButtonClick"
+                    android:clickable="true"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/table"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/textview_table_normal"
+                    android:gravity="center"
+                    android:onClick="onButtonClick"
+                    android:clickable="true"
+                    android:text="3교시"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/monday_3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/textview_table_normal"
+                    android:onClick="onButtonClick"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:id="@+id/tuesday_3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/textview_table_normal"
+                    android:onClick="onButtonClick"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:id="@+id/wednesday_3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/textview_table_normal"
+                    android:onClick="onButtonClick"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:id="@+id/thursday_3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/textview_table_normal"
+                    android:onClick="onButtonClick"
+                    android:clickable="true" />
+
+                <TextView
+                    android:id="@+id/friday_3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/textview_table_normal"
+                    android:onClick="onButtonClick"
+                    android:clickable="true"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/table"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/textview_table_normal"
+                    android:gravity="center"
+                    android:onClick="onButtonClick"
+                    android:clickable="true"
+                    android:text="4교시"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/monday_4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/textview_table_normal"
+                    android:onClick="onButtonClick"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:id="@+id/tuesday_4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/textview_table_normal"
+                    android:onClick="onButtonClick"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:id="@+id/wednesday_4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/textview_table_normal"
+                    android:onClick="onButtonClick"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:id="@+id/thursday_4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/textview_table_normal"
+                    android:onClick="onButtonClick"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:id="@+id/friday_4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/textview_table_normal"
+                    android:onClick="onButtonClick"
+                    android:clickable="true"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/table"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/textview_table_normal"
+                    android:gravity="center"
+                    android:onClick="onButtonClick"
+                    android:clickable="true"
+                    android:text="5교시"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+
+
+                <TextView
+                    android:id="@+id/monday_5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/textview_table_normal"
+                    android:onClick="onButtonClick"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:id="@+id/tuesday_5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/textview_table_normal"
+                    android:onClick="onButtonClick"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:id="@+id/wednesday_5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/textview_table_normal"
+                    android:onClick="onButtonClick"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:id="@+id/thursday_5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/textview_table_normal"
+                    android:onClick="onButtonClick"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:id="@+id/friday_5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/textview_table_normal"
+                    android:onClick="onButtonClick"
+                    android:clickable="true"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/table"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/textview_table_normal"
+                    android:gravity="center"
+                    android:onClick="onButtonClick"
+                    android:clickable="true"
+                    android:text="6교시"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+
+
+                <TextView
+                    android:id="@+id/monday_6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/textview_table_normal"
+                    android:onClick="onButtonClick"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:id="@+id/tuesday_6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/textview_table_normal"
+                    android:onClick="onButtonClick"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:id="@+id/wednesday_6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/textview_table_normal"
+                    android:onClick="onButtonClick"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:id="@+id/thursday_6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/textview_table_normal"
+                    android:onClick="onButtonClick"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:id="@+id/friday_6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/textview_table_normal"
+                    android:onClick="onButtonClick"
+                    android:clickable="true"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/table"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/textview_table_normal"
+                    android:gravity="center"
+                    android:onClick="onButtonClick"
+                    android:clickable="true"
+                    android:text="7교시"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+
+
+                <TextView
+                    android:id="@+id/monday_7"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/textview_table_normal"
+                    android:onClick="onButtonClick"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:id="@+id/tuesday_7"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/textview_table_normal"
+                    android:onClick="onButtonClick"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:id="@+id/wednesday_7"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/textview_table_normal"
+                    android:onClick="onButtonClick"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:id="@+id/thursday_7"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/textview_table_normal"
+                    android:onClick="onButtonClick"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:id="@+id/friday_7"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/textview_table_normal"
+                    android:onClick="onButtonClick"
+                    android:clickable="true"/>
+
+                <!--<TextView
+                android:onClick="onButtonClick-->
+                <!--android:id="@+id/saturday_4"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="2"-->
+                <!--android:background="@drawable/textview_table_normal" />-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/textview_table_normal"
+                    android:gravity="center"
+                    android:onClick="onButtonClick"
+                    android:clickable="true"
+                    android:text="8교시"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/monday_8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/textview_table_normal"
+                    android:onClick="onButtonClick"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:id="@+id/tuesday_8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/textview_table_normal"
+                    android:onClick="onButtonClick"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:id="@+id/wednesday_8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/textview_table_normal"
+                    android:onClick="onButtonClick"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:id="@+id/thursday_8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/textview_table_normal"
+                    android:onClick="onButtonClick"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:id="@+id/friday_8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/textview_table_normal"
+                    android:onClick="onButtonClick"
+                    android:clickable="true"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/table"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/textview_table_normal"
+                    android:gravity="center"
+                    android:onClick="onButtonClick"
+                    android:clickable="true"
+                    android:text="9교시"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/monday_9"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/textview_table_normal"
+                    android:onClick="onButtonClick"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:id="@+id/tuesday_9"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/textview_table_normal"
+                    android:onClick="onButtonClick"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:id="@+id/wednesday_9"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/textview_table_normal"
+                    android:onClick="onButtonClick"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:id="@+id/thursday_9"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/textview_table_normal"
+                    android:onClick="onButtonClick"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:id="@+id/friday_9"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/textview_table_normal"
+                    android:onClick="onButtonClick"
+                    android:clickable="true"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
+

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:paddingTop="20dp"
+    tools:context="com.example.grp05_05.myapplication.MainActivity"
+    android:weightSum="1">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="0.4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right|top"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/commitbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_next"
+                android:drawableRight="@drawable/ic_next"
+                android:drawablePadding="-20dp"
+                android:text="다음"
+                android:textSize="14dp"
+                android:textColor="#393939"
+                android:textAlignment="center"
+                android:scaleType="fitCenter"
+                android:gravity="center|center_vertical"
+                android:padding="3dp"
+                android:background="#00FF0000"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="0.6"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--입력한 두 비밀번호가 일치하지 않으면 에러 메시지 보여주기-->
+            <EditText
+                android:id="@+id/input_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="이메일 혹은 아이디"
+                android:inputType="textEmailAddress"
+                android:padding="14dp"
+                android:singleLine="true"
+                android:textSize="16dp"
+                android:textAlignment="center"
+                android:textColorHint="#393939"
+                android:background="@drawable/stroke_join"/>
+
+            <TextView
+                android:id="@+id/member_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  "
+                android:layout_gravity="right"/>
+
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/input_pw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:hint="비밀번호"
+            android:inputType="textPassword"
+            android:padding="14dp"
+            android:textSize="16dp"
+            android:textAlignment="center"
+            android:textColorHint="#393939"
+            android:background="@drawable/stroke_join"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_marginBottom="30dp">
+
+            <EditText
+                android:id="@+id/input_university"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:hint="학교"
+                android:layout_weight="0.5"
+                android:padding="14dp"
+                android:singleLine="true"
+                android:textSize="16dp"
+                android:textAlignment="center"
+                android:textColorHint="#393939"
+                android:background="@drawable/stroke_join"/>
+
+            <EditText
+                android:id="@+id/input_grade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="0.5"
+                android:background="@drawable/stroke_join"
+                android:hint="학년"
+                android:padding="14dp"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textColorHint="#393939"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/input_major"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:hint="전공"
+            android:padding="14dp"
+            android:singleLine="true"
+            android:textSize="16dp"
+            android:textAlignment="center"
+            android:textColorHint="#393939"
+            android:background="@drawable/stroke_join"/>
+
+        <EditText
+            android:id="@+id/input_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="닉네임"
+            android:padding="14dp"
+            android:singleLine="true"
+            android:textSize="16dp"
+            android:textAlignment="center"
+            android:textColorHint="#393939"
+            android:background="@drawable/stroke_join"/>
+    </LinearLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FFFF"
+
+    android:padding="0dp"
+    >
+
+    <LinearLayout
+        android:layout_width="389dp"
+        android:layout_height="359dp"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <!--자신의 역량에맞게 이미지 변환-->
+
+        <EditText
+            android:id="@+id/mypage_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/passwordinput"
+            android:layout_alignStart="@+id/passwordinput"
+            android:layout_below="@+id/mypage_image"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:hint="       Nickname       "
+            android:textStyle=""
+            android:layout_alignRight="@+id/passwordinput"
+            android:layout_alignEnd="@+id/passwordinput"
+            android:layout_gravity="center_horizontal" />
+
+
+        <EditText
+            android:id="@+id/mypage_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:hint="       나에 대한 설명을
+          나타내주어요.          "
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/menu_button2"
+            android:layout_alignStart="@+id/menu_button2"
+            android:layout_alignRight="@+id/menu_button4"
+            android:layout_alignEnd="@+id/menu_button4"
+            android:layout_gravity="center_horizontal" />
+
+
+        <Button
+            android:id="@+id/talkbutton"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:text="알짜톡"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/passwordinput"
+            android:layout_toEndOf="@+id/menu_button4"
+            android:layout_toRightOf="@+id/menu_button4"
+            android:layout_gravity="right" />
+
+    </LinearLayout>
+
+    <ImageView
+
+        android:layout_marginTop="50dp"
+        android:id="@+id/mypage_image"
+        android:layout_width="400dp"
+        android:layout_height="130dp"
+        android:src="@drawable/ic_friends"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.36"
+        android:layout_alignParentTop="true" />
+
+
+</RelativeLayout>
+
